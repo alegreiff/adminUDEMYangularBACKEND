@@ -1,11 +1,16 @@
 // Requires = importación de librerías
 var express = require('express');
 var mongoose = require ('mongoose')
+var cors = require('cors')
+var bodyParser = require('body-parser')
 
 // Inicializar Variables
 var app = express();
-//app.use(express.json());
-app.use(express.urlencoded({extended: true}))
+app.use(cors())
+app.use(express.json());
+//app.use(express.urlencoded({extended: true}))
+
+
 
 // importar rutas
 var appRoutes = require('./routes/app');
