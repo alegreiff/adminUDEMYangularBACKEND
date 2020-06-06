@@ -4,7 +4,7 @@ var app = express();
 app.get('/', (req, res, next) => {
     res.status(200).json({
         ok: true,
-        mensaje: 'petición correcta mi perro'
+        mensaje: 'petición correcta SOCIO'
     });
 });
 
