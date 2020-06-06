@@ -124,7 +124,7 @@ app.post("/", (req, res) => {
     if (!usuarioDB) {
       return res.status(400).json({
         ok: false,
-        mensaje: "Credenciales incorrectas - email",
+        mensaje: "Credenciales incorrectas - email u correo " + email ,
         errors: err,
       });
     }
