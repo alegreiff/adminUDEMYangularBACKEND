@@ -180,6 +180,7 @@ function obtenerMenu(ROLE) {
 
   if (ROLE === 'ADMIN_ROLE'){
     menu[1].submenu.unshift({titulo: 'Usuarios', url: '/usuarios'})
+    menu[1].submenu.unshift({titulo: 'Andrea García', url: '/sexo'})
   }
 
   return menu;
