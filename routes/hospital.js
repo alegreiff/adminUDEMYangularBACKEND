@@ -102,7 +102,8 @@ app.post("/", mdAuthentication.verificaToken, (req, res) => {
     if (err) {
       return res.status(400).json({
         ok: false,
-        mensaje: "Error al crear Hospital",
+        mensaje: "Error al crear Hospital mi perro",
+        data: req.body,
         errors: err,
       });
     }

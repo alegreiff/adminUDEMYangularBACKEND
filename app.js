@@ -6,9 +6,9 @@ var bodyParser = require('body-parser')
 
 // Inicializar Variables
 var app = express();
-app.use(cors())
+//app.use(cors())
 app.use(express.json());
-//app.use(express.urlencoded({extended: true}))
+app.use(express.urlencoded({extended: true}))
 
 
 
