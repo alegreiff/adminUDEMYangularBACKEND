@@ -43,7 +43,7 @@ app.get("/", (req, res, next) => {
 // 	=======================================
 // 	OBTENER UN ÚNICO MÉDICO
 // 	=======================================
-app.get(':/id', (req, res) =>{
+app.get('/:id', (req, res) =>{
   var id = req.params.id;
   Medico.findById( id )
   .populate('usuario', 'nombre, email, img')
