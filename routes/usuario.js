@@ -40,7 +40,7 @@ app.get("/", (req, res, next) => {
 // 	=======================================
 // 	MODIFICAR un USUARIO
 // 	=======================================
-app.put("/:id", [mdAuthentication.verificaToken, mdAuthentication.verificaADMIN_ROLE], (req, res) => {
+app.put("/:id", [mdAuthentication.verificaToken, mdAuthentication.verificaADMIN_O_MISMOUSUARIO], (req, res) => {
   var id = req.params.id;
   var body = req.body;
 
